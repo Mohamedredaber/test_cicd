@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Projet CI/CD</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Mon Projet CI/CD</h1>
+      <p class="subtitle">Exemple simple pour démontrer un pipeline &amp; captures d'écran</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Présentation</h2>
+      <p>
+        Cette page est un exemple minimaliste en HTML &amp; CSS. Tu peux l'utiliser pour
+        montrer un dépôt, lancer des tests automatiques et capturer le déploiement.
+      </p>
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h3>Build</h3>
+        <p>Étape : compilation / préparation</p>
+      </div>
+      <div>
+        <h3>Test</h3>
+        <p>Étape : exécution des tests automatisés</p>
+      </div>
+      <div>
+        <h3>Deploy</h3>
+        <p>Étape : déploiement sur serveur / hébergement</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Comment utiliser</h2>
+      <ol>
+        <li>Place ces fichiers dans ton dépôt Git (index.html &amp; css/styles.css).</li>
+        <li>Push sur GitHub / GitLab et lance ton pipeline CI/CD.</li>
+        <li>Fais des captures : page d'accueil, logs du pipeline, etc.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> - Projet CI/CD</small>
+    </div>
+  </footer>
+
+  <script>
+    // Petite touche : mettre l'année courante
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

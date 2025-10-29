@@ -1,0 +1,76 @@
+/* styles.css - style simple, propre et responsive */
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --primary:#0b67ff;
+  --text:#222;
+  --muted:#666;
+  --radius:12px;
+  --container-max:960px;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* Container */
+.container{
+  max-width:var(--container-max);
+  margin:0 auto;
+  padding:18px;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(90deg, rgba(11,103,255,0.95), rgba(40,150,255,0.95));
+  color:#fff;
+  padding:28px 0;
+  margin-bottom:18px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+}
+.site-header h1{margin:0;font-size:28px;letter-spacing:0.2px}
+.subtitle{margin:6px 0 0;color:rgba(255,255,255,0.9)}
+
+/* Card */
+.card{
+  background:var(--card);
+  padding:18px;
+  margin-bottom:14px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(20,30,50,0.06);
+}
+.card h2{margin-top:0}
+.card p{color:var(--muted)}
+
+/* Grid for stages */
+.grid{
+  display:grid;
+  gap:12px;
+  grid-template-columns:repeat(3, 1fr);
+}
+.grid h3{margin:0 0 6px}
+.grid p{margin:0;color:var(--muted)}
+
+/* Footer */
+.site-footer{
+  padding:14px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:22px;
+}
+
+/* Responsive */
+@media (max-width:720px){
+  .grid{grid-template-columns:1fr}
+  .site-header h1{font-size:22px}
+}
